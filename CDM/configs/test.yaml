@@ -1,0 +1,3 @@
+model:
+  params:
+    ckpt_path:  ../Checkpoints/CDM.pth
