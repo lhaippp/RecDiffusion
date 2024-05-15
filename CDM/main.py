@@ -650,13 +650,6 @@ if __name__ == "__main__":
                 "target": "main.ImageLogger",
                 "params": {"batch_frequency": 750, "max_images": 4, "clamp": True},
             },
-            "learning_rate_logger": {
-                "target": "main.LearningRateMonitor",
-                "params": {
-                    "logging_interval": "step",
-                    # "log_momentum": True
-                },
-            },
             "cuda_callback": {"target": "main.CUDACallback"},
         }
         if version.parse(pl.__version__) >= version.parse("1.4.0"):
