@@ -1,0 +1,22 @@
+name: RecDiffusion
+channels:
+- pytorch
+- nvidia
+- conda-forge
+dependencies:
+- accelerate
+- einops
+- pytorch-lightning=1.6
+- matplotlib
+- omegaconf
+- pytorch
+- pytorch-cuda
+- scikit-image
+- torchvision
+pip:
+- ema-pytorch
+- opencv-python
+- pytorch-fid
+- taming-transformers
+- timm
+- test-tube
