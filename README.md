@@ -1,6 +1,5 @@
 # [CVPR2024] RecDiffusion: Rectangling for Image Stitching with Diffusion Models
-
-https://arxiv.org/abs/2403.19164
+[paper](https://openaccess.thecvf.com/content/CVPR2024/papers/Zhou_RecDiffusion_Rectangling_for_Image_Stitching_with_Diffusion_Models_CVPR_2024_paper.pdf)
 
 ## How to Sample And Calculate Metrics
 
@@ -17,3 +16,14 @@ https://arxiv.org/abs/2403.19164
 2. Train MDM first: `cd MDM && accelerate launch train_512_atten.py`. You may want to modify this file to change batch size, etc. Please refer to `accelerate`'s documents for more information.
 3. When training is completed, modify `MDM/sample.py`. Specifically, replace `testing` with `training` and change the path to your checkpoint.
 4. Train CDM: `cd CDM && python main.py fit -b configs/rectangling.yaml`
+
+## Citations
+```
+@inproceedings{zhou2024recdiffusion,
+  title={RecDiffusion: Rectangling for Image Stitching with Diffusion Models},
+  author={Zhou, Tianhao and Li, Haipeng and Wang, Ziyi and Luo, Ao and Zhang, Chen-Lin and Li, Jiajun and Zeng, Bing and Liu, Shuaicheng},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={2692--2701},
+  year={2024}
+}
+```
